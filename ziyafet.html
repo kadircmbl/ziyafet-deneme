@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziyafet Çiğköfte</title>
+
+    <style>
+        .ziya{
+            width: 100%;
+            height: 600px;
+            margin-top: 10px;
+        }
+
+        .ziya2{
+            width: 100%;
+            height: 600px;
+        }
+
+        .ziya3{
+            width: 100%;
+            height: 600px;
+        }
+
+        .container{
+            display:flex ;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .card:hover{
+            transition: all 1.0s;
+    transform: scale(1.2);
+        }
+
+
+        footer{
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            height: 350px;
+            align-items: center;
+            background-color: grey;
+            padding-inline: 200px;
+           margin-top: 30px;
+        }
+
+        footer ul li{
+            list-style-type: none;
+            margin: 15px 20px;
+        }
+
+        footer ul li a{
+            text-decoration: none;
+            color: aliceblue;
+            letter-spacing: 2px;
+        }
+        .line{
+            border: 3px solid whitesmoke;
+            height: 200px;
+
+        }
+
+        footer .f-right ul{
+            display: flex;
+        }
+
+        footer .f-right ul li{
+            font-size: 50px;
+        }
+
+        iframe{
+            margin-top: 30px;
+        }
+
+        .ziya4{
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+
+    <!-- ! CSS LİNK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ziyafet Çiğköfte</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünlerimiz
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Porsiyonlar</a></li>
+                  <li><a class="dropdown-item" href="#">Dürümler</a></li>
+                  <li><a class="dropdown-item" href="#">İçecekler</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <!-- !carousel yaısı -->
+
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="ziya" src="img/ziyafet1.jpg" class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="ziya2" src="img/ziyafet2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class="ziya3" src="img/ziyafet3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- ! card yapısı-->
+
+      <div class="container">
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/ziyafet1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dürümşer</h5>
+          <p class="card-text">
+            <ul>
+                <li>normal dürüm</li>
+                <li>mega dürüm</li>
+                <li>ultra mega dürüm</li>
+                <li>double dürüm</li>
+            </ul>
+          </p>
+          <a href="#" class="btn btn-primary">Göster</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/ziyafet2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Porsiyonlar</h5>
+          <p class="card-text"><ul>
+            <li>200 gr0</li>
+            <li>400 gr</li>
+            <li>600gr</li>
+            <li>800 gr</li>
+            <li>1000 gr</li>
+          </ul></p>
+          <a href="#" class="btn btn-primary">Göster</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="img/ziyafet3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">İçecekler</h5>
+          <p class="card-text"><ul>
+            <li>Ayran</li>
+            <li>Tombul Ayran</li>
+            <li>Kola</li>
+            <li>Şalgam</li>
+          </ul></p>
+          <a href="#" class="btn btn-primary">Göster</a>
+        </div>
+      </div>
+    </div>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.1584738736356!2d29.381094675819295!3d38.66822587177392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c87f909a537989%3A0xd5fa16e1a19bb76!2zS2VtYWzDtnosIDEuIFDEsXJsYW50YSBTay4gTm86ODIsIDY0MjAwIFXFn2FrIE1lcmtlei9VxZ9haw!5e0!3m2!1str!2str!4v1688742498137!5m2!1str!2str" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <img class="ziya4" src="img/ziyafet4.jpg" alt="">
+
+    <!-- ! footer kısmı -->
+
+
+    <footer>
+        <div class="f-left">
+            <ul>
+                <li>
+                    <a href="#">Anasayfa</a>
+                </li>
+                <li>
+                    <a href="#">Hakkımızda</a>
+                </li><li>
+                    <a href="#">İletişim</a>
+                </li><li>
+                    <a href="#">Kayıt Ol</a>
+                </li><li>
+                    <a href="#">Giriş</a>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+        <div class="f-right">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li><li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li><li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
